@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIL-X // Community Matrix</title>
+    <link rel="stylesheet" href="css/community.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">CIVIL-X</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-version">v2.0.24</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <span class="nav-icon">🏗️</span>
+                    <span class="nav-text">HOME</span>
+                </a>
+                <a href="subjects.html" class="nav-link">
+                    <span class="nav-icon">📐</span>
+                    <span class="nav-text">SUBJECTS</span>
+                </a>
+                <a href="community.html" class="nav-link active">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-text">COMMUNITY</span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="community-main">
+        <h1 class="page-title glitch-text" data-text="COMMUNITY MATRIX">
+            COMMUNITY MATRIX
+        </h1>
+
+        <div class="community-grid">
+            <!-- Announcements -->
+            <section class="announcements glass-card">
+                <h2 class="section-title">📢 SYSTEM BROADCASTS</h2>
+                <div class="announcements-list" id="announcementsList"></div>
+            </section>
+
+            <!-- Countdown Timer -->
+            <section class="countdown glass-card">
+                <h2 class="section-title">⏰ EXAM COUNTDOWN</h2>
+                <div class="countdown-timer" id="countdownTimer">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countDays">00</span>
+                        <span class="countdown-label">DAYS</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countHours">00</span>
+                        <span class="countdown-label">HOURS</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countMinutes">00</span>
+                        <span class="countdown-label">MINUTES</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countSeconds">00</span>
+                        <span class="countdown-label">SECONDS</span>
+                    </div>
+                </div>
+                <p class="countdown-message" id="countdownMessage"></p>
+            </section>
+
+            <!-- Memes Section -->
+            <section class="community-memes glass-card">
+                <h2 class="section-title">🎭 MEME MATRIX</h2>
+                <div class="meme-rotator" id="memeRotator">
+                    <img src="" alt="Engineering Meme" id="communityMeme">
+                    <p class="meme-text" id="communityMemeText"></p>
+                </div>
+                <button class="refresh-meme" id="refreshMeme">LOAD NEW MEME</button>
+            </section>
+
+            <!-- Class Gallery -->
+            <section class="gallery glass-card">
+                <h2 class="section-title">📸 CLASS GALLERY</h2>
+                <div class="gallery-grid" id="galleryGrid">
+                    <img src="testimage2.jpg" alt="Class Photo" class="gallery-image" onerror="this.src='D'">
+                    <img src="testimage1.jpg" alt="Site Visit" class="gallery-image" onerror="this.src='test'">
+                    <img src="testimage3.jpg" alt="Lab Session" class="gallery-image" onerror="this.src='https://via.placeholder.com/300x200/0a0a1a/00ffff?text=LAB+MODE'">
+                    <img src="testimage2.jpg" alt="Group Work" class="gallery-image" onerror="this.src='https://via.placeholder.com/300x200/0a0a1a/00ffff?text=GROUP+WORK'">
+                </div>
+            </section>
+
+            <!-- Complaints System -->
+            <section class="complaints glass-card">
+                <h2 class="section-title">📝 SUBMIT COMPLAINT</h2>
+                <form class="complaint-form" id="complaintForm">
+                    <input type="text" id="complaintName" placeholder="Your Name (or anonymous)" class="form-input glass-input" required>
+                    <input type="text" id="complaintSubject" placeholder="Subject" class="form-input glass-input" required>
+                    <textarea id="complaintMessage" placeholder="Type your complaint here... (We probably can't help, but it's therapeutic)" class="form-textarea glass-input" rows="4" required></textarea>
+                    <button type="submit" class="complaint-button">SEND COMPLAINT</button>
+                </form>
+            </section>
+
+            <!-- Confessions -->
+            <section class="confessions glass-card">
+                <h2 class="section-title">🤫 ENGINEERING CONFESSIONS</h2>
+                <div class="confession-box" id="confessionBox">
+                    <p class="confession-text" id="confessionText"></p>
+                </div>
+                <button class="confession-button" id="confessionButton">REVEAL CONFESSION</button>
+            </section>
+
+            <!-- Lecturer Ratings -->
+            <section class="ratings glass-card">
+                <h2 class="section-title">⭐ LECTURER VIBE CHECK</h2>
+                <div class="ratings-list" id="ratingsList"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer glass-nav">
+        <div class="footer-content">
+            <p class="footer-text">© 2024 CIVIL ENGINEERING OS | Don't take the complaints section too seriously 😅</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/community.js"></script>
+</body>
+</html>

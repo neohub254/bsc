@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIL-X // BSC Civil Engineering OS</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-grid"></div>
+            <div class="loader-text" id="loaderText">INITIALIZING ENGINEERING MATRIX...</div>
+            <div class="loader-bar">
+                <div class="loader-progress" id="loaderProgress"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">CIVIL-X</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-version">v2.0.24</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">
+                    <span class="nav-icon">🏗️</span>
+                    <span class="nav-text">HOME</span>
+                </a>
+                <a href="subjects.html" class="nav-link">
+                    <span class="nav-icon">📐</span>
+                    <span class="nav-text">SUBJECTS</span>
+                </a>
+                <a href="community.html" class="nav-link">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-text">COMMUNITY</span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="blueprintCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge glass-card">
+                <span class="pulse-dot"></span>
+                SYSTEM ONLINE • BSC CIVIL ENGINEERING
+            </div>
+            <h1 class="hero-title glitch-text" data-text="CIVIL ENGINEERING OS">
+                CIVIL ENGINEERING OS
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text" id="typingText"></span>
+            </p>
+            <div class="hero-stats">
+                <div class="stat-card glass-card">
+                    <div class="stat-number" id="studentCount">90</div>
+                    <div class="stat-label">ENGINEERS</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" id="subjectCount">8</div>
+                    <div class="stat-label">SUBJECTS</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" id="daysLeft">45</div>
+                    <div class="stat-label">DAYS TO EXAMS</div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="subjects.html" class="cta-button primary">
+                    <span>ACCESS TERMINAL</span>
+                    <span class="cta-arrow">→</span>
+                </a>
+                <a href="community.html" class="cta-button secondary">
+                    <span>JOIN MATRIX</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-particles" id="heroParticles"></div>
+    </section>
+
+    <!-- Engineering Quotes -->
+    <section class="quotes-section">
+        <div class="quote-card glass-card" id="quoteCard">
+            <div class="quote-icon">⚙️</div>
+            <p class="quote-text" id="quoteText"></p>
+            <div class="quote-author" id="quoteAuthor"></div>
+        </div>
+    </section>
+
+    <!-- Subject Previews -->
+    <section class="subjects-preview" id="subjectsPreview">
+        <h2 class="section-title">
+            <span class="title-bracket">[</span>
+            ACTIVE MODULES
+            <span class="title-bracket">]</span>
+        </h2>
+        <div class="subjects-grid" id="subjectsGrid"></div>
+    </section>
+
+    <!-- Memes Section -->
+    <section class="memes-section">
+        <h2 class="section-title">
+            <span class="title-bracket">[</span>
+            ENGINEERING MEMES.exe
+            <span class="title-bracket">]</span>
+        </h2>
+        <div class="memes-carousel" id="memesCarousel">
+            <button class="carousel-btn prev" id="prevMeme">◄</button>
+            <div class="meme-display glass-card" id="memeDisplay">
+                <img src="" alt="Engineering Meme" id="memeImage">
+                <p class="meme-caption" id="memeCaption"></p>
+            </div>
+            <button class="carousel-btn next" id="nextMeme">►</button>
+        </div>
+    </section>
+
+    <!-- Stress Level Calculator -->
+    <section class="stress-calculator">
+        <div class="stress-card glass-card">
+            <h3 class="stress-title">STRESS LEVEL DETECTOR</h3>
+            <div class="stress-meter">
+                <div class="meter-bar" id="stressBar">
+                    <div class="meter-fill" id="stressFill"></div>
+                </div>
+                <div class="meter-reading" id="stressReading">CALCULATING...</div>
+            </div>
+            <button class="stress-button" id="stressButton">SCAN STRESS</button>
+        </div>
+    </section>
+
+    <!-- Engineering Joke Generator -->
+    <section class="jokes-section">
+        <div class="joke-card glass-card">
+            <h3 class="joke-title">🎭 ENGINEERING JOKE GENERATOR</h3>
+            <p class="joke-text" id="jokeText">Click to generate</p>
+            <button class="joke-button" id="jokeButton">GENERATE JOKE</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-nav">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">[</span>
+                CIVIL-X
+                <span class="logo-bracket">]</span>
+            </div>
+            <p class="footer-text">© 2024 CIVIL ENGINEERING OS | Dedan Kimathi University</p>
+            <p class="footer-meme">"Sleep is temporary, GPA is forever."</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

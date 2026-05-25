@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIL-X // Subjects Dashboard</title>
+    <link rel="stylesheet" href="css/subjects.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">CIVIL-X</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-version">v2.0.24</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <span class="nav-icon">🏗️</span>
+                    <span class="nav-text">HOME</span>
+                </a>
+                <a href="subjects.html" class="nav-link active">
+                    <span class="nav-icon">📐</span>
+                    <span class="nav-text">SUBJECTS</span>
+                </a>
+                <a href="community.html" class="nav-link">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-text">COMMUNITY</span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="subjects-main">
+        <div class="subjects-header">
+            <h1 class="page-title glitch-text" data-text="SUBJECTS DASHBOARD">
+                SUBJECTS DASHBOARD
+            </h1>
+            <div class="search-container">
+                <div class="search-wrapper glass-card">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="subjectSearch" placeholder="Search modules... (e.g., Hydraulics)" class="search-input">
+                </div>
+            </div>
+            <div class="filter-tags" id="filterTags"></div>
+        </div>
+
+        <div class="subjects-grid" id="subjectsGrid">
+            <!-- Dynamic content from data.js -->
+        </div>
+
+        <!-- PDF Viewer Modal -->
+        <div class="modal" id="pdfModal">
+            <div class="modal-content glass-card">
+                <span class="modal-close" id="closeModal">&times;</span>
+                <div class="modal-header">
+                    <h3 id="modalTitle">Document Preview</h3>
+                </div>
+                <div class="modal-body">
+                    <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer glass-nav">
+        <div class="footer-content">
+            <p class="footer-text">© 2024 CIVIL ENGINEERING OS | v2.0.24</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/subjects.js"></script>
+</body>
+</html>
