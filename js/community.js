@@ -1,5 +1,5 @@
 // ========================================
-// CIVIL-X ENGINEERING OS - COMMUNITY SYSTEM
+// CIVIL-X ENGINEERING OS - COMMNITY SYSTEM
 // ========================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -211,6 +211,8 @@ function initComplaintSystem() {
     }, 1500);
   });
 }
+
+
 
 // Confessions System
 function initConfessions() {
